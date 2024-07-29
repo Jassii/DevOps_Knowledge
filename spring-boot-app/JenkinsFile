@@ -10,8 +10,10 @@ pipeline {
       steps {
         // checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Jassii/DevOps_Knowledge']])
         
-        git branch: 'main', url: 'https://github.com/Jassii/DevOps_Knowledge'
-        sh 'Checkout is done'
+        // git branch: 'main', url: 'https://github.com/Jassii/DevOps_Knowledge'
+        // sh 'Checkout is done'
+
+        sh "Checkout done"
       }
     }
     stage('Build and Test') {
